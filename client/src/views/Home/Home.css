@@ -1,0 +1,20 @@
+
+.home-greeting{
+    font-size: 30px;
+    margin: 0;
+}
+
+.home-heading{
+    color: #0084ff;
+    font-size: 20px;
+    margin: 0;
+}
+
+.home-logout{
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}

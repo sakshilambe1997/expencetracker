@@ -33,19 +33,19 @@ const postTransaction = async (req, res) => {
 }
 
 const getTransactions =async(req,res)=>{
-    const {userId}=req.body;
+    const {userId}=req.query;
 
     const user = await User.findById(userId);
 
     if(!user){
-        res.json({
+        return res.json({
             success:false,
             message:"user not found",
             data:null
         })
     }
 
-    const transactions = await Transaction.findById({user:userId})
+    const transactions = await Transaction.find({user:userId})
 
     res.json({
         sucess:true,

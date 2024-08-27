@@ -1,7 +1,5 @@
 import User from "../models/User.js";
 
-
-
 const postSignup = async (req, res) => {
     const { fullName, email, password, dob } = req.body;
     const user = new User({
@@ -40,7 +38,7 @@ const postLogin=async(req,res)=>{
 
     if(user){
         res.json({
-            sucess:true,
+            success:true,
             message:"login Successful",
             data:user
 
@@ -49,7 +47,7 @@ const postLogin=async(req,res)=>{
 
     else{
         res.json({
-            sucess:false,
+            success:false,
             message:"Invalid Credentials",
             data:null
         })
