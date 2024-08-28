@@ -6,7 +6,7 @@ import toast,{Toaster} from "react-hot-toast"
 function AddTransaction() {
     const [user,setUser]= useState('')
     const [title, setTitle]= useState('')
-    const [amount,setAmount]= useState(0)
+    const [amount,setAmount]= useState('')
     const [type,setType]= useState('credit')
     const [category,setCategory]= useState('learning')
 
@@ -34,7 +34,7 @@ function AddTransaction() {
         toast.success(response.data.message)
 
         setTitle('')
-        setAmount(0)
+        setAmount('')
         setType('credit')
         setCategory('learning')
 

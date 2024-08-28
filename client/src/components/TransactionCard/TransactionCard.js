@@ -1,5 +1,22 @@
 import "./TransactionCard.css"
-function TransactionCard({_id,title,amount,category,type,createdAt}) {
+import axios from "axios"
+import toast,{Toaster} from "react-hot-toast"
+
+
+function TransactionCard({_id,title,amount,category,type,createdAt,loadTransaction}) {
+
+  const deleteTransaction = async()=>{
+ const response =await axios.delete(`${process.env.REACT_APP_API_URL}/transaction/${_id}`)
+
+ toast.success(response.data.message)
+
+ setTimeout(()=>{
+  loadTransaction();
+
+  window.location.href="/"
+ },3000)
+ 
+  }
   return (
     <div className="transaction-card">
       <h1 className="transaction-card-title">{title}</h1>
@@ -11,7 +28,8 @@ function TransactionCard({_id,title,amount,category,type,createdAt}) {
       <span className="transaction-card-amount" style={{color:type === "credit"? "green":"red"}}>
         {type === "credit"? "+":"-"}{" "}{amount}</span>
 
-        <button type="button" className="transaction-card-delete">Delete</button>
+        <button type="button" className="transaction-card-delete" onClick={deleteTransaction}>Delete</button>
+        <Toaster/>
     </div>
   )
 }

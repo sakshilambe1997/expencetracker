@@ -49,4 +49,11 @@ border-radius: 25px;
 .transaction-card-delete{
     background-color: #0084ff;
     color: white;
+    padding:5px 10px ;
+    font-size: 12px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 30px;
+    cursor: pointer;
+
 }
