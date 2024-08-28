@@ -38,9 +38,9 @@ function AddTransaction() {
         setType('credit')
         setCategory('learning')
 
-        // setTimeout(()=>{
-        // window.location.href='/'
-        // },2000)
+        setTimeout(()=>{
+        window.location.href='/'
+        },2000)
 
       }
 
