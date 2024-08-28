@@ -10,6 +10,8 @@ function TransactionCard({_id,title,amount,category,type,createdAt}) {
 
       <span className="transaction-card-amount" style={{color:type === "credit"? "green":"red"}}>
         {type === "credit"? "+":"-"}{" "}{amount}</span>
+
+        <button type="button" className="transaction-card-delete">Delete</button>
     </div>
   )
 }

@@ -45,3 +45,8 @@ bottom: 10px;
 padding: 2px 16px;
 border-radius: 25px;
 }
+
+.transaction-card-delete{
+    background-color: #0084ff;
+    color: white;
+}

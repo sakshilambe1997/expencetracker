@@ -38,9 +38,9 @@ function AddTransaction() {
         setType('credit')
         setCategory('learning')
 
-        setTimeout(()=>{
-        window.location.href='/'
-        },2000)
+        // setTimeout(()=>{
+        // window.location.href='/'
+        // },2000)
 
       }
 
@@ -69,7 +69,7 @@ function AddTransaction() {
             <select  className="user-input"  value={type}
               onChange={(e)=>setType(e.target.value)}>
                 <option value="credit"> Income</option>
-                <option value="dedit"> Expence</option>
+                <option value="debit"> Expence</option>
             </select>
 
             
@@ -86,7 +86,7 @@ function AddTransaction() {
                 <option value="learning"> learning</option>
             </select>
 
-            <button className="btn-auth" onClick={addTransaction}>
+            <button className="btn-auth" type="button"  onClick={addTransaction}>
                 Add Transaction
             </button>
         </form>
