@@ -1,0 +1,47 @@
+.transaction-card{
+    border:1px solid #f0f0f0;
+    margin: 10px 30px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #f0f0f0;
+    width: 800px;
+    display: block;
+    margin: 30px auto;
+    position: relative;
+}
+
+.transaction-card-title{
+    margin:5px;
+    font-size: 30px;
+}
+
+.transaction-card-amount{
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: bold;
+}
+
+.text-red{
+    color: red;
+}
+
+.text-green{
+    color: green;
+}
+
+.transaction-card-date{
+    font-size: 15px;
+}
+
+.transaction-card-category{
+font-size: 15px;
+background-color: #0084ff;
+color: white;
+position: absolute;
+right: 10px;
+bottom: 10px;
+padding: 2px 16px;
+border-radius: 25px;
+}
