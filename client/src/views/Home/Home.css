@@ -27,7 +27,7 @@
 
 .net-transactions-value-item{
     width: 150px;
-    border: 2px solid #ffff;
+    border: 3px solid #ffff;
     padding: 10px;
     border-radius: 5px;
 
@@ -37,6 +37,7 @@
     display: block;
     text-align: center;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .net-transaction-value-amount{

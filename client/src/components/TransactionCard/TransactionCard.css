@@ -37,7 +37,7 @@
 
 .transaction-card-category{
 font-size: 15px;
-background-color: #0084ff;
+background-color: black;
 color: white;
 position: absolute;
 right: 10px;
@@ -47,7 +47,7 @@ border-radius: 25px;
 }
 
 .transaction-card-delete{
-    background-color: #0084ff;
+    background-color: black;
     color: white;
     padding:5px 10px ;
     font-size: 12px;
