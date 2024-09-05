@@ -3,6 +3,7 @@ import "./AddTransaction.css"
 import {useState ,useEffect} from "react"
 import toast,{Toaster} from "react-hot-toast"
 
+
 function AddTransaction() {
     const [user,setUser]= useState('')
     const [title, setTitle]= useState('')
@@ -46,7 +47,7 @@ function AddTransaction() {
 
 
   return (
-    <div>
+    <div className="background-img">
         <h1 className="auth-heading">
             Add Transaction For {user.fullName}</h1>
         <form className="auth-form">

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import toast, { Toaster } from "react-hot-toast";
-import axios, { all } from "axios";
+import axios from "axios";
 import TransactionCard from "../../components/TransactionCard/TransactionCard";
 import ImgAdd from "./add.png"
 import { Link } from "react-router-dom";
@@ -35,8 +35,6 @@ function Home() {
       `${process.env.REACT_APP_API_URL}/transactions?userId=${user._id}`
     );
 
-    const allTransactions = response.data.data;
-
     toast.dismiss();
 
     setTransactions(response.data.data);
@@ -51,7 +49,7 @@ function Home() {
     let expence = 0;
 
     transactions.forEach((transaction) => {
-      if (transaction.type == "credit") {
+      if (transaction.type === "credit") {
         income += transaction.amount;
       } else {
         expence += transaction.amount;

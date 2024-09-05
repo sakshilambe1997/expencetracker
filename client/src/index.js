@@ -1,11 +1,12 @@
 
 import ReactDOM from "react-dom/client";
 import{createBrowserRouter,RouterProvider} from "react-router-dom"
+import "./index.css"
 
 import Home from "./views/Home/Home";
 import Login from "./views/Login/Login"
 import Signup from "./views/Signup/Signup"
-import "./global.css"
+
 import AddTransaction from "./views/AddTransaction/AddTransaction";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

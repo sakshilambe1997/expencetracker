@@ -4,6 +4,7 @@ import axios from "axios"
 import {Link} from "react-router-dom"
 import toast,{Toaster} from "react-hot-toast";
 
+
 function Signup() {
   const [user, setUser] = useState({
     fullName: "",
@@ -80,7 +81,7 @@ function Signup() {
         </button>
       </form>
 
-      <Link to="/login" className="auth-link">Already have an account? Login</Link>
+      <Link to="/login" className="auth-link">Already have an account? <span className="link-text">Login</span></Link>
       <Toaster/>
     </div>
   );

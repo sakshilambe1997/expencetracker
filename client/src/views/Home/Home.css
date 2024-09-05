@@ -5,7 +5,7 @@
 }
 
 .home-heading{
-    color: #0084ff;
+    color: black;
     font-size: 20px;
     margin: 0;
 }
@@ -27,7 +27,7 @@
 
 .net-transactions-value-item{
     width: 150px;
-    border: 2px solid #0084ff;
+    border: 2px solid #ffff;
     padding: 10px;
     border-radius: 5px;
 
@@ -60,7 +60,7 @@
     background-color: white;
     padding: 7px;
     border-radius: 50%;
-    border: 2px double #0084ff;
+    border: 2px double #ffff;
     cursor: pointer;
 }
 
