@@ -1,10 +1,12 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 body{
     padding: 0;
     margin: 0;
     background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
 }
-
-
 .user-input{
    display: block;
    margin: 20px auto;
@@ -13,10 +15,7 @@ body{
    border-radius: 5px;
    padding: 10px 10px;
    font-size: 18px;
-   
 }
-
-
 .auth-form{
     width:400px;
     border: 2px solid ;
@@ -24,9 +23,7 @@ body{
     display: block;
     margin: 0 auto;
     border-radius:10px ;
-    background-color: ;
     z-index: 100;
-
 }
 
 .auth-heading{

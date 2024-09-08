@@ -5,6 +5,7 @@ import axios from "axios";
 import TransactionCard from "../../components/TransactionCard/TransactionCard";
 import ImgAdd from "./add.png"
 import { Link } from "react-router-dom";
+import Navbar from "../../components/Navbar/Navbar";
 
 function Home() {
   const [user, setUser] = useState("");
@@ -62,21 +63,21 @@ function Home() {
 
   return (
     <div>
+      <Navbar/>
       <h1 className="home-greeting auth-heading">Hello {user.fullName}</h1>
       <h2 className="home-heading auth-heading" >Welcome to the Expence Tracker</h2>
-      <span
+      {/* <span
         className="home-logout"
         onClick={() => {
           localStorage.clear();
           toast.success("Logout Successfully!!");
-
           setTimeout(() => {
             window.location.href = "/login";
           }, 3000);
         }}
       >
         Logout
-      </span>
+      </span> */}
 
       <div className="net-transactions-value">
         <div className="net-transactions-value-item">
