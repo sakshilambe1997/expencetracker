@@ -3,6 +3,8 @@ import "./Login.css"
 import {Link} from "react-router-dom"
 import axios from "axios"
 import toast,{Toaster} from "react-hot-toast"
+import Footer from '../../components/Footer/Footer'
+import Navbar from '../../components/Navbar/Navbar'
 
 
 function Login() {
@@ -34,6 +36,7 @@ function Login() {
 
   return (
     <div>
+      <Navbar/>
      <h1 className='auth-heading'> User Login</h1>
 
 <form className='auth-form' >
@@ -64,6 +67,8 @@ function Login() {
 <Link to='/signup' className="auth-link">Don't have an account? <span className='link-text'>Signup</span></Link>
 
 <Toaster/>
+<br/><br/>
+<Footer/>
       </div>
 
 
