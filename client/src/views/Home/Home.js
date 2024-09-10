@@ -6,6 +6,7 @@ import TransactionCard from "../../components/TransactionCard/TransactionCard";
 import ImgAdd from "./add.png"
 import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 function Home() {
   const [user, setUser] = useState("");
@@ -62,6 +63,7 @@ function Home() {
   }, [transactions]);
 
   return (
+    <>
     <div>
       <Navbar/>
       <h1 className="home-greeting auth-heading">Hello {user.fullName}</h1>
@@ -124,6 +126,10 @@ function Home() {
       
       <Toaster />
     </div>
+
+    <Footer/>
+</>
+
 
    
   );

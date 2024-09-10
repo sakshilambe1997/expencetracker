@@ -7,6 +7,7 @@ import Login from "./views/Login/Login"
 import Signup from "./views/Signup/Signup"
 
 import AddTransaction from "./views/AddTransaction/AddTransaction";
+import Footer from "./components/Footer/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "/navbar",
     element: <Navbar/>,
+  },
+  {
+    path: "/footer",
+    element: <Footer/>,
   },
   {
     path: "*",

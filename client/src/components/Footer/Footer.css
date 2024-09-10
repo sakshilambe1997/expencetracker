@@ -1,0 +1,29 @@
+.footer-container{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    color:  white;
+}
+
+.footer-menu-container{
+    width: 220px;
+    text-align: center;
+}
+
+.footer-contact-logo{
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footer-text{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-contact-logo:hover{
+    background-color: white;
+    box-shadow: 0 0 2px 2px 7px white;
+    
+}
