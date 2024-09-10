@@ -2,6 +2,8 @@ import axios from "axios"
 import "./AddTransaction.css"
 import {useState ,useEffect} from "react"
 import toast,{Toaster} from "react-hot-toast"
+import Footer from "../../components/Footer/Footer"
+import Navbar from "./../../components/Navbar/Navbar.js"
 
 
 function AddTransaction() {
@@ -47,6 +49,8 @@ function AddTransaction() {
 
 
   return (
+    <>
+    <Navbar/>
     <div className="background-img">
         <h1 className="auth-heading">
             Add Transaction For {user.fullName}</h1>
@@ -91,9 +95,11 @@ function AddTransaction() {
                 Add Transaction
             </button>
         </form>
-
+        <br/>
+      <Footer/>
         <Toaster/>
         </div>
+        </>
   )
 }
 
