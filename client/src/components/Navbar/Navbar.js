@@ -15,7 +15,7 @@ function Navbar() {
       <Link to="/"  className='navbar-menu'>Home</Link>
       <Link to='/login' className='navbar-menu'>Login</Link>
       <Link to='/add-transaction' className='navbar-menu'>Add Transaction</Link>
-      <Link to='/about' className='navbar-menu'>About</Link>
+      <Link to='/signup' className='navbar-menu'>Signup</Link>
       <Link to='/Privacy' className='navbar-menu'>Privacy</Link>
       <span
         className="navbar-menu"
