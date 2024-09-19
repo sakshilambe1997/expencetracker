@@ -22,7 +22,7 @@
 .net-transactions-value{
     display: flex;
     justify-content: space-evenly;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .net-transactions-value-item{
@@ -72,8 +72,8 @@
 
 @media screen and (max-width:500px){
     .home-greeting{
-        font-size: 18px;
-        margin: 7px;
+        font-size: 20px;
+        margin-bottom: 7px;
     }
     
     .home-heading{
@@ -112,9 +112,10 @@
     }
     
     .transactions-container{
-        max-height: 60%;
-        width: 95%;
+        max-height: 400px;
+        width: 100%;
         overflow-y: scroll;
+        margin-bottom: 40px;
     }
     
     .add-transaction{

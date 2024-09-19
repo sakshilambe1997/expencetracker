@@ -42,6 +42,10 @@
         width: 220px;
         text-align: center;
     }
+
+    .footer-main-heading{
+        font-size: 17px;
+    }
     
     .footer-contact-logo{
         height: 15px;
@@ -50,6 +54,7 @@
     
     .footer-text{
         font-weight: bold;
+        font-size: 15px;
         cursor: pointer;
     }
     
