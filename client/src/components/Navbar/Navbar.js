@@ -21,9 +21,7 @@ function Navbar() {
           <span className="nav-brand-name">Expence Tracker</span>
           
           <img src={MenuImg} className="nav-menu-img" onClick={toggleMenu}/>
-
           </div>
-      
 
         {
           isMenuOpen ?

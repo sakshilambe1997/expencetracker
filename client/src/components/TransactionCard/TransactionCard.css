@@ -55,5 +55,47 @@ border-radius: 25px;
     border-radius: 20px;
     margin-left: 30px;
     cursor: pointer;
+}
 
+@media screen and (max-width:500px){
+    .transaction-card{
+        margin: 10px 30px;
+        padding: 10px;  
+        width: 80%;
+        margin: 30px auto;
+    }
+    
+    .transaction-card-title{
+        margin:5px;
+        font-size: 20px;
+    }
+    
+    .transaction-card-amount{
+        font-size: 20px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    
+    .transaction-card-date{
+        font-size: 10px;
+    }
+    
+    .transaction-card-category{
+    font-size: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 3px 7px;
+    border-radius: 25px;
+    }
+    
+    .transaction-card-delete{
+        padding:3px 7px ;
+        font-size: 10px;
+        border: none;
+        border-radius: 20px;
+        margin-left: 10px;
+        cursor: pointer;
+    
+    }
 }

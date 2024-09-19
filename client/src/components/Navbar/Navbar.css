@@ -40,6 +40,7 @@
 .nav-menu-img{
     height: 30px;
     background-color: white;
+    display: none;
 }
 
 .navbar-menu{
@@ -60,15 +61,15 @@
 @media screen and (max-width:500px){
 
     .navbar-container{
-        height: 30px;
+        height: 40px;
         align-items: center;
         display: flex;
     }
 
     .navbar-logo-container{
         background-color: #46aef7;
-        height: 35px;
-        width: 50px;
+        height: 20px;
+        width: 30px;
     }
     
     .navbar-logo{
@@ -88,6 +89,11 @@
     }
     .navbar-menu{
        display: none;
+    }
+
+    .nav-menu-img{
+        height: 30px;
+        background-color: white;
     }
 
     .menu-img-item-container{
