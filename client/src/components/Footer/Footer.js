@@ -22,8 +22,8 @@ function Footer() {
           <p className="footer-text">Services</p>
         </div>
 
-        <div className="">
-          <h3 className="">Contact Us</h3>
+        <div className="footer-menu-container">
+          <h3 className="contact-us-heading">Contact Us</h3>
           <img src={Facebook}  className="footer-contact-logo"/>
           <img src={Instagram} className="footer-contact-logo"/>
           <img src={Twitter} className="footer-contact-logo"/>

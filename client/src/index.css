@@ -8,7 +8,7 @@ body{
     background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
 }
 .user-input{
-   display: block;
+    display: block;
    margin: 20px auto;
    width:90%;
    border: 1px solid black;
@@ -62,6 +62,44 @@ body{
 .btn-auth:hover{
     background-color:#3765ec ;
     transition: 0.3s;
+}
+
+@media screen and (max-width:500px){
+    .user-input{
+        display: block;
+        margin: 10px auto;
+        width:90%;
+        padding: 7px 7px;
+        font-size: 14px;
+     }
+     .auth-form{
+         width:80%;
+         padding:10px;
+     }
+     
+     .auth-heading{
+         text-align: center;
+         color: black;
+         font-size: 18px;
+     }
+     
+     .auth-link{
+         margin-top: 20px;
+         font-size: 17px;
+         text-decoration: none;
+     }
+     
+     .link-text{
+         font-size: 17px;
+     }
+     
+     .btn-auth{
+      padding: 7px 15px;
+      font-size: 12px;
+      margin: 15px auto;
+     }
+     
+          
 }
 
 

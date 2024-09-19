@@ -9,6 +9,9 @@
 .footer-menu-container{
     width: 220px;
     text-align: center;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    color: black;
+    margin: 10px;
 }
 
 .footer-contact-logo{
@@ -26,4 +29,34 @@
     background-color: white;
     box-shadow: 0 0 2px 2px 7px white;
     
+}
+
+
+@media screen and (max-width:500px){
+    .footer-container{
+        padding: 10px;
+        color:  white;
+        flex-wrap: wrap;
+    }
+    
+    .footer-menu-container{
+        width: 220px;
+        text-align: center;
+    }
+    
+    .footer-contact-logo{
+        height: 15px;
+        margin: 3px;
+    }
+    
+    .footer-text{
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .footer-contact-logo:hover{
+        background-color: white;
+        box-shadow: 0 0 2px 2px 7px white;
+        
+    }
 }
