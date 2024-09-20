@@ -3,11 +3,12 @@
     margin: 10px 30px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 10px #f0f0f0;
+    box-shadow: 0 0 10px white;
     width: 800px;
     display: block;
     margin: 30px auto;
     position: relative;
+    background-color: white;
 }
 
 .transaction-card-title{
